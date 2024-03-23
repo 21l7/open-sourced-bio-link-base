@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<body>	  
+<audio autoplay>
+<source src="crimewave.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
+<script>
+var audioElement = document.querySelector('audio'); // select the audio element
+audioElement.volume = 1; // set the volume to whatever u want 
+</script>
+<div class="line"></div>
+<img class="pfp" src="images/pfp.png">
+<h1 id="triptych-name">Indigo</h1>
+<div class="dropdown-content">
+<a href="https://github.com/21l7" target="_blank" rel="noopener noreferrer"><img class="github" src="images/github-white.png"></a>
+<a href="https://discord.com/users/1220048345557372988" target="_blank" rel="noopener noreferrer"><img class="discord" src="images/discord-white.png">
+<p class="quote">A chain is only as strong as its weakest link</p>
+<h4 class="aka">aka doom</h4>
+<div id="snow"></div>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    var script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
+    script.onload = function(){
+      particlesJS("snow", {
+        "particles": {
+          "number": {
+            "value": 40,
+            "density": {
+              "enable": true,
+              "value_area": 800
+            }
+          },
+          "color": {
+            "value": "#ffffff"
+          },
+          "opacity": {
+            "value": 0.7,
+            "random": true,
+            "anim": {
+              "enable": true
+            }
+          },
+          "size": {
+            "value": 12.3,
+            "random": true,
+            "anim": {
+              "enable": true
+            }
+          },
+          "line_linked": {
+            "enable": true
+          },
+          "move": {
+            "enable": true,
+            "speed": 10,
+            "direction": "top",
+            "random": true,
+            "straight": true,
+            "out_mode": "out",
+            "bounce": true,
+            "attract": {
+              "enable": true,
+              "rotateX": 300,
+              "rotateY": 1200
+            }
+          },
+          "interactivity": {
+            "events": {
+              "onhover": {
+                "enable": true
+              },
+              "onclick": {
+                "enable": true
+              },
+              "resize": true
+            }
+          },
+          "retina_detect": true
+        }
+      });
+    }
+    document.head.append(script);
+  });
+</script>
+</body>
+</head>
+</html> 
